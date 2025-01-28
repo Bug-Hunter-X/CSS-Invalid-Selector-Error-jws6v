@@ -1,0 +1,17 @@
+/* bugSolution.css */
+
+/* Instead of using an attribute selector that might not be supported or has syntax error, use a more standard selector or refine the selector to be more specific and compatible. */
+div.my-attribute { /* Or use a class instead */
+  color: red;
+}
+
+/* Example of fixing invalid attribute selectors */
+/* Incorrect: div[data-attr=value]  (Missing quotes) */
+div[data-attr="value"] {
+  color: blue;
+}
+
+/* Incorrect: div[data-attr='value'] > * (Overly complex or unsupported) */
+div[data-attr="value"] * {
+  color: green; /*More robust and works on more browsers*/
+}
